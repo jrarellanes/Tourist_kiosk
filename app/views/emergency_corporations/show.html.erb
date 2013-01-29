@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @emergency_corporation.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @emergency_corporation.description %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @emergency_corporation.phone %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @emergency_corporation.location %>
+</p>
+
+
+<%= link_to 'Edit', edit_emergency_corporation_path(@emergency_corporation) %> |
+<%= link_to 'Back', emergency_corporations_path %>

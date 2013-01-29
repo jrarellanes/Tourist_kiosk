@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Iduser:</b>
+  <%= @emergencyrequest.iduser %>
+</p>
+
+<p>
+  <b>Idcorporation:</b>
+  <%= @emergencyrequest.idcorporation %>
+</p>
+
+<p>
+  <b>Daterequest:</b>
+  <%= @emergencyrequest.dateRequest %>
+</p>
+
+
+<%= link_to 'Edit', edit_emergencyrequest_path(@emergencyrequest) %> |
+<%= link_to 'Back', emergencyrequests_path %>

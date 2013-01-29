@@ -1,0 +1,45 @@
+<%= form_for(@places_interest) do |f| %>
+  <% if @places_interest.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@places_interest.errors.count, "error") %> prohibited this places_interest from being saved:</h2>
+
+      <ul>
+      <% @places_interest.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :ubication %><br />
+    <%= f.text_field :ubication %>
+  </div>
+  <div class="field">
+    <%= f.label :horary %><br />
+    <%= f.text_field :horary %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :popularity %><br />
+    <%= f.text_field :popularity %>
+  </div>
+  <div class="field">
+    <%= f.label :idClasification %><br />
+    <%= f.text_field :idClasification %>
+  </div>
+  <div class="field">
+    <%= f.label :urlImage %><br />
+    <%= f.text_field :urlImage %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

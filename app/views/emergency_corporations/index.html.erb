@@ -1,0 +1,29 @@
+<h1>Listing emergency_corporations</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Phone</th>
+    <th>Location</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @emergency_corporations.each do |emergency_corporation| %>
+  <tr>
+    <td><%= emergency_corporation.name %></td>
+    <td><%= emergency_corporation.description %></td>
+    <td><%= emergency_corporation.phone %></td>
+    <td><%= emergency_corporation.location %></td>
+    <td><%= link_to 'Show', emergency_corporation %></td>
+    <td><%= link_to 'Edit', edit_emergency_corporation_path(emergency_corporation) %></td>
+    <td><%= link_to 'Destroy', emergency_corporation, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Emergency corporation', new_emergency_corporation_path %>

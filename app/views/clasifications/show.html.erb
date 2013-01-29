@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @clasification.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @clasification.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_clasification_path(@clasification) %> |
+<%= link_to 'Back', clasifications_path %>

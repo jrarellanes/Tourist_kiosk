@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  iduser: 1
+  idcorporation: 1
+  dateRequest: 2012-11-25
+
+two:
+  iduser: 1
+  idcorporation: 1
+  dateRequest: 2012-11-25

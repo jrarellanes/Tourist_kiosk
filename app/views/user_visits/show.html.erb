@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Iduser:</b>
+  <%= @user_visit.iduser %>
+</p>
+
+<p>
+  <b>Idsite:</b>
+  <%= @user_visit.idsite %>
+</p>
+
+<p>
+  <b>Datevisit:</b>
+  <%= @user_visit.dateVisit %>
+</p>
+
+<p>
+  <b>Ratig:</b>
+  <%= @user_visit.ratig %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_visit_path(@user_visit) %> |
+<%= link_to 'Back', user_visits_path %>

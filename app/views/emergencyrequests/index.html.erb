@@ -1,0 +1,27 @@
+<h1>Listing emergencyrequests</h1>
+
+<table>
+  <tr>
+    <th>Iduser</th>
+    <th>Idcorporation</th>
+    <th>Daterequest</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @emergencyrequests.each do |emergencyrequest| %>
+  <tr>
+    <td><%= emergencyrequest.iduser %></td>
+    <td><%= emergencyrequest.idcorporation %></td>
+    <td><%= emergencyrequest.dateRequest %></td>
+    <td><%= link_to 'Show', emergencyrequest %></td>
+    <td><%= link_to 'Edit', edit_emergencyrequest_path(emergencyrequest) %></td>
+    <td><%= link_to 'Destroy', emergencyrequest, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Emergencyrequest', new_emergencyrequest_path %>

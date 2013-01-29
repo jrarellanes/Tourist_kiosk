@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  iduser: 1
+  idsite: 1
+  dateVisit: 2012-11-25
+  ratig: 1
+
+two:
+  iduser: 1
+  idsite: 1
+  dateVisit: 2012-11-25
+  ratig: 1

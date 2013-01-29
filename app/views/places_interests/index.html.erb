@@ -1,0 +1,35 @@
+<h1>Listing places_interests</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Ubication</th>
+    <th>Horary</th>
+    <th>Description</th>
+    <th>Popularity</th>
+    <th>Idclasification</th>
+    <th>Urlimage</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @places_interests.each do |places_interest| %>
+  <tr>
+    <td><%= places_interest.name %></td>
+    <td><%= places_interest.ubication %></td>
+    <td><%= places_interest.horary %></td>
+    <td><%= places_interest.description %></td>
+    <td><%= places_interest.popularity %></td>
+    <td><%= places_interest.idClasification %></td>
+    <td><%= places_interest.urlImage %></td>
+    <td><%= link_to 'Show', places_interest %></td>
+    <td><%= link_to 'Edit', edit_places_interest_path(places_interest) %></td>
+    <td><%= link_to 'Destroy', places_interest, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Places interest', new_places_interest_path %>

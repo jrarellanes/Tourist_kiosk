@@ -1,0 +1,29 @@
+<h1>Listing user_visits</h1>
+
+<table>
+  <tr>
+    <th>Iduser</th>
+    <th>Idsite</th>
+    <th>Datevisit</th>
+    <th>Ratig</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @user_visits.each do |user_visit| %>
+  <tr>
+    <td><%= user_visit.iduser %></td>
+    <td><%= user_visit.idsite %></td>
+    <td><%= user_visit.dateVisit %></td>
+    <td><%= user_visit.ratig %></td>
+    <td><%= link_to 'Show', user_visit %></td>
+    <td><%= link_to 'Edit', edit_user_visit_path(user_visit) %></td>
+    <td><%= link_to 'Destroy', user_visit, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User visit', new_user_visit_path %>

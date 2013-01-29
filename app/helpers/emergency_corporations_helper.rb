@@ -1,0 +1,2 @@
+module EmergencyCorporationsHelper
+end

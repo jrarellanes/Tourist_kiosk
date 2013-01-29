@@ -1,0 +1,29 @@
+<%= form_for(@emergencyrequest) do |f| %>
+  <% if @emergencyrequest.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@emergencyrequest.errors.count, "error") %> prohibited this emergencyrequest from being saved:</h2>
+
+      <ul>
+      <% @emergencyrequest.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :iduser %><br />
+    <%= f.number_field :iduser %>
+  </div>
+  <div class="field">
+    <%= f.label :idcorporation %><br />
+    <%= f.number_field :idcorporation %>
+  </div>
+  <div class="field">
+    <%= f.label :dateRequest %><br />
+    <%= f.date_select :dateRequest %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

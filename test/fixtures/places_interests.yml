@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  ubication: MyString
+  horary: MyString
+  description: MyText
+  popularity: MyString
+  idClasification: MyString
+  urlImage: MyString
+
+two:
+  name: MyString
+  ubication: MyString
+  horary: MyString
+  description: MyText
+  popularity: MyString
+  idClasification: MyString
+  urlImage: MyString

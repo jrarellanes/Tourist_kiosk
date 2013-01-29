@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @places_interest.name %>
+</p>
+
+<p>
+  <b>Ubication:</b>
+  <%= @places_interest.ubication %>
+</p>
+
+<p>
+  <b>Horary:</b>
+  <%= @places_interest.horary %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @places_interest.description %>
+</p>
+
+<p>
+  <b>Popularity:</b>
+  <%= @places_interest.popularity %>
+</p>
+
+<p>
+  <b>Idclasification:</b>
+  <%= @places_interest.idClasification %>
+</p>
+
+<p>
+  <b>Urlimage:</b>
+  <%= @places_interest.urlImage %>
+</p>
+
+
+<%= link_to 'Edit', edit_places_interest_path(@places_interest) %> |
+<%= link_to 'Back', places_interests_path %>
